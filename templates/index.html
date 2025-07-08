@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Panel de Administración</title>
+<link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+<!-- CONTENEDOR PRINCIPAL DE LA SPA -->
+<div class="container">
+    <!-- BARRA LATERAL DE NAVEGACIÓN -->
+    <aside class="sidebar">
+    <h2>Admin</h2>
+    <nav>
+        <ul>
+        <li><a href="#" class="active">Usuarios</a></li>
+        </ul>
+    </nav>
+    </aside>
+
+    <!-- SECCIÓN PRINCIPAL (SPA: aquí se actualiza dinámicamente la interfaz) -->
+    <main class="main-content">
+    <!-- HEADER CON INFO DE ADMIN -->
+    <header class="header">
+        <div class="admin-info">
+        <span>Administrador</span>
+        <img src="./assets/img/admin.png" alt="Admin" />
+        </div>
+    </header>
+
+    <!-- LISTADO DE USUARIOS -->
+    <section class="user-section">
+        <div class="section-header">
+        <h1>Usuarios</h1>
+        <button id="btn-add-user">+ Agregar Usuario</button>
+        </div>
+
+        <!-- TABLA SPA: se llena dinámicamente con usuarios desde JS -->
+        <table class="user-table">
+        <thead>
+            <tr>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Teléfono</th>
+            <th>Matrícula</th>
+            <th>Fecha Ingreso</th>
+            <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="user-table-body">
+            <!-- Contenido generado dinámicamente por JS -->
+        </tbody>
+        </table>
+    </section>
+    </main>
+</div>
+
+<!-- MODAL SPA: para crear o editar usuario -->
+<div id="user-modal" class="modal hidden">
+    <div class="modal-content">
+    <span id="modal-close" class="modal-close">&times;</span>
+    <h2 id="modal-title">Nuevo Usuario</h2>
+    <form id="user-form">
+        <input type="hidden" id="user-id" />
+        <label>Nombre Completo<input type="text" id="name" required /></label>
+        <label>Email<input type="email" id="email" required /></label>
+        <label>Teléfono<input type="text" id="phone" required /></label>
+        <label>Matrícula<input type="text" id="enrollNumber" required /></label>
+        <label>Fecha de Ingreso<input type="date" id="dateOfAdmission" required /></label>
+        <button type="submit">Guardar</button>
+    </form>
+    </div>
+</div>
+
+<!-- ENLACE AL SCRIPT PRINCIPAL -->
+<script type="module" src="./script.js"></script>
+</body>
+</html>

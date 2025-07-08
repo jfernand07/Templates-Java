@@ -1,0 +1,136 @@
+/* ESTILOS GLOBALES */
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+}
+
+body {
+display: flex;
+height: 100vh;
+background-color: #f4f6f8;
+}
+
+/* SIDEBAR */
+.sidebar {
+width: 220px;
+background-color: #2f3e46;
+color: white;
+padding: 20px;
+}
+
+.sidebar h2 {
+margin-bottom: 20px;
+}
+
+.sidebar nav a {
+color: white;
+text-decoration: none;
+display: block;
+padding: 10px 0;
+}
+
+.sidebar nav a.active {
+font-weight: bold;
+color: #00b4d8;
+}
+
+/* CONTENIDO PRINCIPAL */
+.main-content {
+flex-grow: 1;
+padding: 20px;
+overflow-y: auto;
+}
+
+/* HEADER ADMIN */
+.header {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.admin-info {
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+.admin-info img {
+width: 40px;
+height: 40px;
+border-radius: 50%;
+}
+
+/* TABLA DE USUARIOS */
+.user-section .section-header {
+display: flex;
+justify-content: space-between;
+margin-bottom: 20px;
+}
+
+.user-table {
+width: 100%;
+border-collapse: collapse;
+background-color: white;
+}
+
+.user-table th,
+.user-table td {
+padding: 12px;
+text-align: left;
+border-bottom: 1px solid #ddd;
+}
+
+.user-table th {
+background-color: #e0e0e0;
+}
+
+.user-table button {
+margin-right: 5px;
+}
+
+/* MODAL */
+.modal {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.5);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.modal.hidden {
+display: none;
+}
+
+.modal-content {
+background: white;
+padding: 20px;
+width: 400px;
+border-radius: 8px;
+position: relative;
+}
+
+.modal-close {
+position: absolute;
+top: 10px;
+right: 14px;
+cursor: pointer;
+font-size: 20px;
+}
+
+#user-form label {
+display: block;
+margin: 10px 0;
+}
+
+#user-form input {
+width: 100%;
+padding: 8px;
+margin-top: 4px;
+}
