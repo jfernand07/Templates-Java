@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "id": "0022",
+      "name": "Maria García",
+      "email": "maria.garcia@example.com",
+      "phone": "3109876543",
+      "enrollNumber": "2023002",
+      "dateOfAdmission": "31-Aug-2023"
+    },
+    {
+      "id": "cbf4",
+      "name": "jose ospina garcia",
+      "email": "jfernando@gmail.com",
+      "phone": "333333333",
+      "enrollNumber": "2251",
+      "dateOfAdmission": "22-Jul-2025"
+    }
+  ]
+}
