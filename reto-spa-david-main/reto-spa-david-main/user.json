@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "id": "380e",
+      "name": "carlos",
+      "email": "mail@mail",
+      "password": "1234",
+      "phone": "123412",
+      "enrollNumber": "212324kjjj",
+      "dateOfAdmission": "2025-03-12",
+      "role": "admin"
+    },
+    {
+      "id": "380f",
+      "name": "juanita",
+      "email": "juan@mail",
+      "password": "5678",
+      "phone": "555555",
+      "enrollNumber": "312321s",
+      "dateOfAdmission": "2025-03-12",
+      "role": "user"
+    }
+  ]
+}
